@@ -8,3 +8,7 @@ output "current_region" {
 output "instance_ip" {
   value = aws_instance.amazon_linux.public_ip
 }
+
+output "lb_ip" {
+  value = aws_lb.lb.dns_name
+}
